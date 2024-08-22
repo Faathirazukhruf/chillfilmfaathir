@@ -1,0 +1,169 @@
+body, html {
+    color: #fff;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    background-image: url('masuk.jpeg'); 
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-box {
+    background-color: rgba(39, 36, 36, 0.9);
+    padding: 40px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(20, 19, 19, 0.966);
+    width: 350px;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+
+.logo {
+    margin-bottom: 20px;
+}
+
+.logo img {
+    width: 100px;
+}
+
+h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.user-box {
+    position: relative;
+    margin-bottom: 10px;
+    padding-right: 50px;
+}
+
+.user-box input {
+    background-color: #0e0404;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 20px;
+    width: 100%;
+}
+
+.user-box label {
+    position: absolute;
+    top: 0;
+    left: 20px;
+    pointer-events: none;
+    transform: translateY(15px);
+    transition: 0.2s ease;
+    color: #fff;
+}
+
+.user-box input:focus ~ label,
+.user-box input:valid ~ label {
+    top: -13px;
+    font-size: 8px;
+    color: #2e57dd;
+}
+
+.user-box input:focus {
+    outline: none;
+}
+
+a {
+    display: block;
+    background-color: #e91414;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 20px;
+    left: 20px;
+    text-decoration: none;
+    text-align: center;
+    transition: 0.2s ease;
+    width: 86%;
+    margin-bottom: 10px;
+}
+
+a:hover {
+    background-color: #126ac2;
+}
+
+.or-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.line {
+    height: 1px;
+    background-color: #fff;
+    flex-grow: 1;
+    margin: 0 10px;
+}
+
+.google-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #3b3939;
+    border-radius: 10px;
+    color: #f7f5f5;
+    font-size: 16px;
+    padding: 10px 20px;
+    text-decoration: none;
+    text-align: center;
+    transition: 0.2s ease;
+    width: 87%; 
+    margin-bottom: 10px;
+}
+
+.google-button img {
+    width: 20px;
+    margin-right: 10px;
+}
+
+.forgot-password,
+.register-account {
+    font-size: 14px;
+    color: #fff;
+}
+
+.forgot-password {
+    margin-bottom: 10px;
+}
+
+.register-account {
+    text-align: left;
+}
+
+@media (max-width: 76px) {
+    .login-box {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .login-box {
+        width: 95%;
+    }
+    .google-button {
+        font-size: 14px;
+    }
+}
+
+

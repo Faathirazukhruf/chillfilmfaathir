@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chill - Sign Up</title>
+    <style>
+           body, html {
+    color: #f8f1f1;
+    height: 100px;
+    font-family: Arial, sans-serif;
+} 
+        .container {
+            background-image: url(Daftarbro.jpeg);
+            background-size: cover;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .login-box {
+    background-color: rgba(51, 45, 45, 0.9);
+    padding: 30px;
+    text-align: left;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(20, 19, 19, 0.966);
+    width: 350px;
+    margin: 0 auto;
+}
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        h3 {
+            text-align: center;
+        }
+
+        h4  {
+            text-align: center;
+            color: #948383;
+        }
+
+        .input-field {
+            margin-bottom: 20px;
+        }
+
+        .input-field label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .input-field input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #333;
+            color: #fff;
+        }
+
+        .input-field input::placeholder {
+            color: #999;
+        }
+
+        .input-field input:focus {
+            outline: none;
+            border-color: #6699cc;
+        }
+
+        .button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #444040;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            width: 100%;
+        }
+
+        .button:hover {
+            background-color: #054688;
+        }
+
+        .google-button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #444040;
+            color: #f3efef;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            width: 100%;
+        }
+
+        .google-button:hover {
+            background-color: #1a7aa7;
+        }
+
+        .google-button img {
+            margin-right: 10px;
+        }
+
+        .forgot-password {
+            text-align: left;
+            margin-top: 20px;
+            font-size: 14px;
+        }
+
+        .forgot-password a {
+            color: #6699cc;
+            text-decoration: none;
+        }
+
+        .forgot-password a:hover {
+            text-decoration: underline;
+        }
+
+        .social-login {
+            text-align: left;
+            margin-top: 20px;
+            font-size: 14px;
+        }
+
+        .social-login a {
+            color: #6699cc;
+            text-decoration: none;
+        }
+
+        .social-login a:hover {
+            text-decoration: underline;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        .social-icons img {
+            width: 30px;
+            height: 30px;
+            margin: 0 5px;
+        }
+       
+        .logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .logo img {
+            width: 800px;
+            height: 800Spx;
+        }
+
+        @media (max-width: 400px) {
+            .container {
+                padding: 20px;
+            }
+        }
+
+        @media (max-width: 350px) {
+            .logo img {
+                width: 60px;
+                height: 60px;
+            }
+        }
+
+        .logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .logo img {
+            width: 100px;
+            height: 40px;
+        }
+
+        .logo h1 {
+            margin: 0;
+            font-size: 48px;
+        }
+
+        a {
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 10px;
+    text-decoration: none;
+    transition: 0.2s ease;
+    width: 86%;
+    margin-bottom: 10px;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="login-box">
+            <div class="logo">
+            <img src="Logo.png" alt="Chill Logo">
+        </div>
+        <h1>Daftar</h1>
+        <h3>Selamat datang!</h3>
+        <form>
+            <div class="input-field">
+                <label for="username">Username</label>
+                <input type="text" id="username" placeholder="Masukkan username" required>
+            </div>
+            <div class="input-field">
+                <label for="password">Kata Sandi</label>
+                <input type="password" id="password" placeholder="Masukkan kata sandi" required>
+            </div>
+            <div class="input-field">
+                <label for="confirm-password">Kofirmasi Kata Sandi</label>
+                <input type="password" id="confirm-password" placeholder="Masukkan kata sandi" required>
+            </div>
+             <button class="button"><a href="homepage.html">Daftar</a></button>
+            <p>Sudah punya akun? <a href="homepage.html">Masuk</a></p>
+        </form>
+        <h4>Atau</h4>
+        <button class="google-button">
+            <img src="https://www.google.com/images/branding/product/ico/googleg_lodp.ico"  alt="Google Logo">
+            Daftar dengan Google
+        </button>
+        </div>   
+    </div>
+</body>
+</html>

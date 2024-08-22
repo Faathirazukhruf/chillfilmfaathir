@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Chill Movie App</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #000103;
+      color: #fff;
+    }
+
+    header {
+      background-color: #222;
+      padding: 15px 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .logo {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 80px;
+            height: auto;
+            margin: 10px;
+        }
+
+    .icon {
+       position: absolute;
+            top: 0;
+            right: 0;
+            width: 35px;
+            height: auto;
+            margin: 10px;
+    }
+
+    .icon :hover {
+      color:#f75815
+    } 
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+
+    nav li {
+      margin-right: 20px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #fff;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #ff6600;
+    }
+
+    .hero {
+      background-image: url(Rectangle\ 9.png);
+      background-size: cover;
+      background-position: center;
+      padding: 80px 0;
+      text-align: center;
+    }
+
+    .hero-title {
+      font-size: 48px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .hero-text {
+      font-size: 18px;
+      line-height: 1.5;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .buttons {
+      margin-top: 30px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 12px 24px;
+      background-color: #09488f;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: background-color 0.3s;
+    }
+
+    .button:hover {
+      background-color: #063344;
+    }
+
+    .section {
+      margin-bottom: 40px;
+    }
+
+    .section-title {
+      font-size: 32px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .movie-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      grid-gap: 20px;
+    }
+
+    .movie-card {
+      background-color: #282828;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      position: relative;
+    }
+
+    .movie-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .movie-card-info {
+      padding: 15px;
+    }
+
+    .movie-card-title {
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .movie-card-rating {
+      font-size: 14px;
+      color: #ff6600;
+      margin-bottom: 10px;
+    }
+
+    .movie-card-button {
+      display: inline-block;
+      padding: 8px 16px;
+      background-color: #ff6600;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      font-size: 14px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: background-color 0.3s;
+    }
+
+    .movie-card-button:hover {
+      background-color: #ff4d00;
+    }
+
+    footer {
+      background-color: #222;
+      padding: 20px 0;
+    }
+
+    footer p {
+      margin: 4%;
+      text-align: center;
+    } 
+
+    .genre-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 20px;
+    }
+
+    .genre-item {
+      padding: 8px 16px;
+      background-color: #333;
+      border-radius: 5px;
+      font-size: 14px;
+      font-weight: bold;
+      color: #fff;
+      cursor: pointer;
+    }
+
+    .genre-item:hover {
+      background-color: #444;
+    }
+  </style>
+</head>
+<body>
+  <header>  
+    <div class="container">
+      <img src="Logo.png" alt="Logo" class="logo">
+      <a href="index.html"><img src="Ellipse 395.png" alt="icon" class="icon"></a>
+      <nav>
+        <ul>
+          <li><a href="#">Series</a></li>
+          <li><a href="#">Film</a></li>
+          <li><a href="#">Daftar Saya</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+   <section class="hero">
+    <div class="container">
+      <h1 class="hero-title">Duty After School</h1>
+      <p class="hero-text">
+        Sebuah benda tak dikenal mengambil alih dunia. Dalam keputusasaan,
+        Departemen Pertahanan mulai merekrut lebih banyak tentara, termasuk siswa
+        sekolah menengah. Mereka pun segera menjadi pejuang garis depan dalam perang
+      </p>
+      <div class="buttons">
+        <button class="button">Mulai</button>
+        <button class="button">Selengkapnya</button>
+      </div>
+    </div>
+  </section>
+
+   <section class="section">
+    <div class="container">
+      <h2 class="section-title">Melanjutkan Tonton Film</h2>
+      <div class="movie-grid">
+        <div class="movie-card">
+          <img src="Frame 66@2x.png" alt="Movie 1">
+          <div class="movie-card-info">
+            <h3 class="movie-card-title">Don't Look Up</h3>
+            <p class="movie-card-rating">4.3/5</p>
+            <button class="movie-card-button">Lanjutkan</button>
+          </div>
+        </div>
+        <div class="movie-card">
+          <img src="Frame 67.png" alt="all of us are dead">
+          <div class="movie-card-info">
+            <h3 class="movie-card-title">All of us are dead</h3>
+            <p class="movie-card-rating">4.2/5</p>
+            <button class="movie-card-button">Lanjutkan</button>
+          </div>
+        </div>
+        <div class="movie-card">
+          <img src="2000e Épingle 🥳🥳.jpeg" alt="Movie 3">
+          <div class="movie-card-info">
+            <h3 class="movie-card-title">Blue Lock</h3>
+            <p class="movie-card-rating">4.4/5</p>
+            <button class="movie-card-button">Lanjutkan</button>
+          </div>
+        </div>
+        <div class="movie-card">
+          <img src="Frame 68@2x.png" alt="Movie 4">
+          <div class="movie-card-info">
+            <h3 class="movie-card-title">A Man Called Otto</h3>
+            <p class="movie-card-rating">4.2/5</p>
+            <button class="movie-card-button">Lanjutkan</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">Top Rating Film dan Series Hari ini</h2>
+      <div class="movie-grid">
+        <div class="movie-card">
+          <img src="Suzume (2022).jpeg" alt="Movie 5">
+          <div class="movie-card-info">
+            <h3 class="movie-card-title">Suzume</h3>
+            <button class="movie-card-button">Tonton Sekarang</button>
+          </div>
+        </div>
+        <div class="movie-card">
+          <img src="_.jpeg" alt="Movie 6">
+          <div class="movie-card-info">
+            <h3 class="movie-card-title">Jurassic World</h3>
+            <button class="movie-card-button">Tonton Sekarang</button>
+          </div>
+        </div>
+        <div class="movie-card">
+          <img src="Frame 76.png" alt="Movie 7">
+          <div class="movie-card-info">
+            <h3 class="movie-card-title">Sonic</h3>
+            <button class="movie-card-button">Tonton Sekarang</button>
+          </div>
+        </div>
+        <div class="movie-card">
+          <img src="Frame 79.png" alt="Movie 8">
+          <div class="movie-card-info">
+            <h3 class="movie-card-title">All of Us Are Dead</h3>
+            <button class="movie-card-button">Tonton Sekarang</button>
+          </div>
+        </div>
+        <div class="movie-card">
+          <img src="Frame 77.png" alt="Movie 9">
+          <div class="movie-card-info">
+            <h3 class="movie-card-title">Big Hero 6</h3>
+            <button class="movie-card-button">Tonton Sekarang</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">Film Trending</h2>
+      <div class="movie-grid">
+        <div class="movie-card">
+          <img src="Frame 74.png" alt="Movie 10">
+          <div class="movie-card-info">
+            <h3 class="movie-card-title">The Tomorrow War</h3>
+            <button class="movie-card-button">Tonton Sekarang</button>
+          </div>
+        </div>
+        <div class="movie-card">
+          <img src="Frame 75.png" alt="Movie 11">
+          <div class="movie-card-info">
+            <h3 class="movie-card-title">Quantumania</h3>
+            <button class="movie-card-button">Tonton Sekarang</button>
+          </div>
+        </div>
+        <div class="movie-card">
+          <img src="Frame 76 (1).png" alt="Movie 12">
+          <div class="movie-card-info">
+            <h3 class="movie-card-title">Guardians of the Galaxy</h3>
+            <button class="movie-card-button">Tonton Sekarang</button>
+          </div>
+        </div>
+        <div class="movie-card">
+          <img src="Frame 68@2x.png" alt="Movie 13">
+          <div class="movie-card-info">
+            <h3 class="movie-card-title">A Man Called Otto</h3>
+            <button class="movie-card-button">Tonton Sekarang</button>
+          </div>
+        </div>
+        <div class="movie-card">
+          <img src="_The Little Mermaid ( 11__ x 17__ ) Collector's Poster Print -( T3 ) B2G1F_.jpeg" alt="Movie 14">
+          <div class="movie-card-info">
+            <h3 class="movie-card-title">Little Mermaid</h3>
+            <button class="movie-card-button">Tonton Sekarang</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">Rilis Baru</h2>
+      <div class="movie-grid">
+        <div class="movie-card">
+          <img src="_The Little Mermaid ( 11__ x 17__ ) Collector's Poster Print -( T3 ) B2G1F_.jpeg" alt="Movie 15">
+          <div class="movie-card-info">
+            <h3 class="movie-card-title">Little Mermaid</h3>
+            <button class="movie-card-button">Tonton Sekarang</button>
+          </div>
+        </div>
+        <div class="movie-card">
+          <img src="Rectangle 9.png" alt="Movie 16">
+          <div class="movie-card-info">
+            <h3 class="movie-card-title">Duty After School</h3>
+            <button class="movie-card-button">Tonton Sekarang</button>
+          </div>
+        </div>
+        <div class="movie-card">
+          <img src="Frame 77.png" alt="Movie 17">
+          <div class="movie-card-info">
+            <h3 class="movie-card-title">Big Hero 6</h3>
+            <button class="movie-card-button">Tonton Sekarang</button>
+          </div>
+        </div>
+        <div class="movie-card">
+          <img src="Frame 79.png" alt="Movie 18">
+          <div class="movie-card-info">
+            <h3 class="movie-card-title">All of Us Are Dead</h3>
+            <button class="movie-card-button">Tonton Sekarang</button>
+          </div>
+        </div>
+        <div class="movie-card">
+          <img src="Frame 77 (1).png" alt="Movie 19">
+          <div class="movie-card-info">
+            <h3 class="movie-card-title">Missing</h3>
+            <button class="movie-card-button">Tonton Sekarang</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+     <img src="Logo.png">
+    <div>
+    <div class="container">
+      <div class="genre-list">
+        <div class="genre-item">Aksi</div>
+        <div class="genre-item">Drama</div>
+        <div class="genre-item">Komedi</div>
+        <div class="genre-item">Sains & Alam</div>
+        <div class="genre-item">Animasi</div>
+        <div class="genre-item">Fantasi Ilmiah & Fantasi</div>
+        <div class="genre-item">Petualangan</div>
+        <div class="genre-item">Thriller</div>
+        <div class="genre-item">Anak-anak</div>
+        <div class="genre-item">Kejahatan</div>
+        <div class="genre-item">Perang</div>
+        <div class="genre-item">Britama</div>
+        <div class="genre-item">KDrama</div>
+        <div class="genre-item">Romants</div>
+        <div class="genre-item">Bantuan</div>
+        <div class="genre-item">FAQ</div>
+        <div class="genre-item">Kontak Kami</div>
+        <div class="genre-item">Poivasi</div>
+        <div class="genre-item">Syarat & Ketentuan</div>
+      </div>
+      <p>&copy; 2024 Chill All Rights Reserved. Created by Faathirazukhruf.</p>
+    </div>
+  </div>
+  </footer>
+</body>
+</html> 
